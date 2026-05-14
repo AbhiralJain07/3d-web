@@ -210,7 +210,7 @@ function ShowcaseScene({ active }: { active: number }) {
 
       {/* Cinematic Post-Processing */}
       <EffectComposer multisampling={8} enableNormalPass>
-        <SSAO radius={0.1} intensity={1.5} luminanceInfluence={0.5} color="#000000" />
+        <SSAO radius={0.1} intensity={1.5} luminanceInfluence={0.5} color={new THREE.Color("#000000")} />
         <Bloom intensity={0.5} luminanceThreshold={0.8} luminanceSmoothing={0.9} />
         <Vignette eskil={false} offset={0.1} darkness={1.1} />
         <Noise opacity={0.015} />
